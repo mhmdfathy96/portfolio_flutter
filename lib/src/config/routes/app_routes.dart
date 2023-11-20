@@ -24,7 +24,7 @@ class AppRoutes {
               body: Center(child: Text("Loading...")),
             ),
             web: Scaffold(
-              body: Center(child: Text("Loading...")),
+              body: Center(child: Text("loading 2 ...")),
             ),
           ),
         );
