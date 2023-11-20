@@ -17,10 +17,16 @@ class AppRoutes {
       case Routes.initialRoute:
         return MaterialPageRoute(
           builder: (_) => const Responsive(
-            mobile: SizedBox(),
-            tablet: SizedBox(),
-            web: SizedBox(),
-              ),
+            mobile: Scaffold(
+              body: Center(child: Text("Loading...")),
+            ),
+            tablet: Scaffold(
+              body: Center(child: Text("Loading...")),
+            ),
+            web: Scaffold(
+              body: Center(child: Text("Loading...")),
+            ),
+          ),
         );
       case Routes.noInternetConnection:
         return MaterialPageRoute(
