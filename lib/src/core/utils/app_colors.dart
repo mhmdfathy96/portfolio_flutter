@@ -1,0 +1,52 @@
+import 'package:flutter/material.dart';
+
+import 'hex_color.dart';
+
+class AppColors {
+  static Color primary100 = HexColor("#DDE5EC");
+  static Color primary200 = HexColor("#C2D3E2");
+  static Color primary300 = HexColor("#8BAFCF");
+  static Color primary400 = HexColor("#3F81BE");
+  static Color primary500 = HexColor("#235481");
+  static Color primary600 = HexColor("#224A6E");
+  static Color primary700 = HexColor("#193D5E");
+  static Color primary800 = HexColor("#113353");
+  static Color primary900 = HexColor("#04223E");
+  static Color neutral100 = HexColor("#FFFFFF");
+  static Color neutral200 = HexColor("#F0F2F5");
+  static Color neutral300 = HexColor("#D2D9E0");
+  static Color neutral400 = HexColor("#B4C0CB");
+  static Color neutral500 = HexColor("#96A6B6");
+  static Color neutral600 = HexColor("#879AAB");
+  static Color neutral700 = HexColor("#546778");
+  static Color neutral800 = HexColor("#34404B");
+  static Color neutral900 = HexColor("#151A1E");
+  static Color success100 = HexColor("#C3EAD5");
+  static Color success200 = HexColor("#9DDDBB");
+  static Color success300 = HexColor("#77D0A0");
+  static Color success400 = HexColor("#51C386");
+  static Color success500 = HexColor("#3AA76D");
+  static Color success600 = HexColor("#339460");
+  static Color success700 = HexColor("#2D8154");
+  static Color success800 = HexColor("#266E48");
+  static Color success900 = HexColor("#205B3B");
+  static Color error100 = HexColor("#FEEDEB");
+  static Color error200 = HexColor("#EFB9B3");
+  static Color error300 = HexColor("#E69289");
+  static Color error400 = HexColor("#DD6B5F");
+  static Color error500 = HexColor("#D44333");
+  static Color error600 = HexColor("#C23829");
+  static Color error700 = HexColor("#B13325");
+  static Color error800 = HexColor("#9C2D21");
+  static Color error900 = HexColor("#87271C");
+  static Color warning100 = HexColor("#FFE2A8");
+  static Color warning200 = HexColor("#FFD98F");
+  static Color warning300 = HexColor("#FFD175");
+  static Color warning400 = HexColor("#FFC85C");
+  static Color warning500 = HexColor("#FFC043");
+  static Color warning600 = HexColor("#FFAF0F");
+  static Color warning700 = HexColor("#DB9200");
+  static Color warning800 = HexColor("#A87000");
+  static Color warning900 = HexColor("#754E00");
+  static Color pniksh = HexColor("#F585D2");
+}
