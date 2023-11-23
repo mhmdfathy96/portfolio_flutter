@@ -9,7 +9,11 @@ class TextWidget extends StatelessWidget {
   final TextAlign? textAlign;
   final int? maxLines;
   const TextWidget(this.text,
-      {Key? key, this.textStyle, this.textAlign, this.args, this.maxLines})
+      {Key? key,
+      this.textStyle,
+      this.textAlign,
+      this.args,
+      this.maxLines,})
       : super(key: key);
 
   @override

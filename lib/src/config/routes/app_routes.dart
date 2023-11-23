@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_template/src/core/responsive/responsive.dart';
+import 'package:project_template/src/features/splash/presentation/screens/splash_screen.dart';
 
 import '../../core/screens/no_internet_connection_screen.dart';
 import '../../core/utils/app_strings.dart';
@@ -9,25 +10,14 @@ import '../../features/home/presentation/screens/home_screen.dart';
 class Routes {
   static const String initialRoute = "/";
   static const String noInternetConnection = "/noInternetConnection";
+  static const String homeScreen = "/homeScreen";
 }
 
 class AppRoutes {
   static Route<dynamic> onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
       case Routes.initialRoute:
-        return MaterialPageRoute(
-          builder: (_) => const Responsive(
-            mobile: Scaffold(
-              body: Center(child: Text("Loading...")),
-            ),
-            tablet: Scaffold(
-              body: Center(child: Text("Loading...")),
-            ),
-            web: Scaffold(
-              body: Center(child: Text("loading 2 ...")),
-            ),
-          ),
-        );
+        return MaterialPageRoute(builder: (_) => const SplashScreen());
       case Routes.noInternetConnection:
         return MaterialPageRoute(
           builder: (context) => NoInternetConnectionScreen(
@@ -36,7 +26,10 @@ class AppRoutes {
             },
           ),
         );
-
+      case Routes.homeScreen:
+        return MaterialPageRoute(
+          builder: (context) => const HomeScreen(),
+        );
       default:
         return undefinedRoute();
     }

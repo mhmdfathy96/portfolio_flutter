@@ -1,5 +1,5 @@
 class AppStrings {
-  static const String appName = "Bridge App";
+  static const String appName = "Mohamed Fat-hy Portfolio";
   static const String fontFamily = "segoeui";
   static const String noRouteFound = "No Route Found";
   static const String alertDialog = "Alert Dialog";
@@ -16,6 +16,9 @@ class AppStrings {
   static const String authorization = "Authorization";
   static const String acceptLanguage = "Accept-Language";
   static const String bearer = "Bearer";
-  static const String androidPackageName = "com.yapoey.bridgeProject";
-  static const String appleAppID = "";
+  static const String cvPath =
+      "https://drive.google.com/file/d/13Xn1x8biFuNnQnIPybM-kno_OMv7yUpV/view";
+  static const String clients = "5";
+  static const String experience = "+2";
+  static const String projects = "5";
 }

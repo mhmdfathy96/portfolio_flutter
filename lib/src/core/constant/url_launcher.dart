@@ -61,20 +61,4 @@ class UrlLauncherHelper {
       debugPrint(exception.toString());
     }
   }
-
-  static Future update() async {
-    if (Platform.isAndroid || Platform.isIOS) {
-      final appId =
-          Platform.isAndroid ? AppStrings.androidPackageName : AppStrings.appleAppID;
-      final url = Uri.parse(
-        Platform.isAndroid
-            ? "https://play.google.com/store/apps/details?id=$appId"
-            : "https://apps.apple.com/app/id$appId",
-      );
-      await launchUrl(
-        url,
-        mode: LaunchMode.externalApplication,
-      );
-    }
-  }
 }

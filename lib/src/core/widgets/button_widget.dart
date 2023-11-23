@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ButtonWidget extends StatelessWidget {
   final Widget child;
@@ -14,7 +15,8 @@ class ButtonWidget extends StatelessWidget {
       required this.onPressed,
       this.backgroundColor,
       this.borderRadius,
-      this.borderSide = BorderSide.none, this.shadowColor})
+      this.borderSide = BorderSide.none,
+      this.shadowColor})
       : super(key: key);
 
   @override
@@ -26,7 +28,7 @@ class ButtonWidget extends StatelessWidget {
         shadowColor: MaterialStateProperty.all(shadowColor),
         shape: MaterialStateProperty.all(
           RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(borderRadius ?? 12),
+            borderRadius: BorderRadius.circular(borderRadius ?? 12.w),
             side: borderSide,
           ),
         ),
